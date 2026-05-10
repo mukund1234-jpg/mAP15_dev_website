@@ -1,4 +1,4 @@
-const techTags = ["React", "Node.js", "PostgreSQL", "AWS", "Python", "FastAPI", "Django"];
+const techTags = ["React", "Three.js", "PostgreSQL", "AWS", "Python", "FastAPI", "Django"];
 
 const terminalLines = [
   { prompt: true, cmd: "cat about.json" },
@@ -41,7 +41,7 @@ export default function About() {
             <div className="ac-br" />
             {/* Badge */}
             <div className="absolute -bottom-5 -right-5 bg-sur2 border border-cyan/20  px-5 py-4 z-[2]">
-              <div className="font-display text-[2rem] font-bold text-cyan leading-none">5+</div>
+              <div className="font-display text-[2rem] font-bold text-cyan leading-none">  1 +</div>
               <div className="font-mono text-[.62rem] text-muted tracking-[.1em] mt-1">YEARS EXP.</div>
             </div>
           </div>
@@ -60,12 +60,11 @@ export default function About() {
               Hey — I'm Mukund, a{" "}
               <strong className="text-white font-medium">Full Stack Software Developer</strong>{" "}
               based in Mumbai, India. I specialize in building fast, accessible, and
-              visually stunning web applications from concept to deployment.
+              visually stunning web applications and mobile apps from concept to deployment.
             </p>
             <p className="text-muted leading-[1.8] mb-7">
-              I've shipped products used by{" "}
-              <strong className="text-white font-medium">10+ users</strong>, led
-              engineering teams, and contributed to open-source projects. When I'm not
+              I've shipped products 
+               and contributed to open-source projects. When I'm not
               coding, I'm writing about software architecture or playing chess.
             </p>
             <div className="flex flex-wrap gap-2">
