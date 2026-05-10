@@ -84,9 +84,11 @@ function usePageFade() {
 export default function App() {
   useScrollReveal();
   usePageFade();
+  const canvasRef = useRef(null);
 
   return (
     <>
+      {/* <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" /> */}
       <Cursor />
       <Navbar />
       <main>
@@ -95,7 +97,6 @@ export default function App() {
         <Skills />
         <Projects />
         <Experience />
-        {/* <Testimonials /> */}
         <Contact />
       </main>
       <Footer />

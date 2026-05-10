@@ -1,22 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
-  { label: "About",      href: "#about",      num: "01." },
-  { label: "Skills",     href: "#skills",     num: "02." },
-  { label: "Projects",   href: "#projects",   num: "03." },
+  { label: "About", href: "#about", num: "01." },
+  { label: "Skills", href: "#skills", num: "02." },
+  { label: "Projects", href: "#projects", num: "03." },
   { label: "Experience", href: "#experience", num: "04." },
-  { label: "Contact",    href: "#contact",    num: "05." },
+  { label: "Contact", href: "#contact", num: "05." },
 ];
 
 function smoothScroll(href) {
   const target = document.querySelector(href);
-  if (target) window.scrollTo({ top: target.offsetTop - 70, behavior: "smooth" });
+  if (target)
+    window.scrollTo({ top: target.offsetTop - 70, behavior: "smooth" });
 }
 
 export default function Navbar() {
-  const [scrolled, setScrolled]   = useState(false);
-  const [menuOpen, setMenuOpen]   = useState(false);
-  const [activeId, setActiveId]   = useState("");
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [activeId, setActiveId] = useState("");
   const navRef = useRef(null);
 
   // Sticky style
@@ -31,7 +32,9 @@ export default function Navbar() {
     const secs = document.querySelectorAll("section[id]");
     const onScroll = () => {
       let cur = "";
-      secs.forEach((s) => { if (window.scrollY >= s.offsetTop - 150) cur = s.id; });
+      secs.forEach((s) => {
+        if (window.scrollY >= s.offsetTop - 150) cur = s.id;
+      });
       setActiveId(cur);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -49,14 +52,17 @@ export default function Navbar() {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${navClass}`}
       >
         <div className="max-w-6xl mx-auto px-8 flex items-center justify-between">
-
           {/* Logo */}
           <a
             href="#hero"
-            onClick={(e) => { e.preventDefault(); smoothScroll("#hero"); }}
+            onClick={(e) => {
+              e.preventDefault();
+              smoothScroll("#hero");
+            }}
             className="font-mono text-[0.95rem] text-cyan"
           >
-            <span className="text-muted">&lt;</span>mAP15_dev<span className="text-muted">/&gt;</span>
+            <span className="text-muted">&lt;</span>mAP15_dev
+            <span className="text-muted">/&gt;</span>
           </a>
 
           {/* Desktop links */}
@@ -65,11 +71,15 @@ export default function Navbar() {
               <li key={href}>
                 <a
                   href={href}
-                  onClick={(e) => { e.preventDefault(); smoothScroll(href); }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    smoothScroll(href);
+                  }}
                   className="font-mono text-[0.73rem] text-muted hover:text-cyan transition-colors tracking-widest"
                   style={{ color: activeId === href.slice(1) ? "#63d2ff" : "" }}
                 >
-                  <span className="text-cyan mr-1">{num}</span>{label}
+                  <span className="text-cyan mr-1">{num}</span>
+                  {label}
                 </a>
               </li>
             ))}
@@ -99,7 +109,10 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       <div
-        className={`${menuOpen ? "flex" : "hidden"} fixed inset-0 bg-bg/98 z-[999] flex-col items-center justify-center gap-8`}
+        className={`${
+          menuOpen ? "flex" : "hidden"
+        } fixed inset-0 z-[999] flex-col items-center justify-center gap-8 
+  bg-black/40 backdrop-blur-md transition-all duration-300`}
       >
         {navLinks.map(({ label, href, num }) => (
           <a

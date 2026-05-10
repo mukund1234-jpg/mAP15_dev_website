@@ -13,7 +13,7 @@ const contacts = [
     label: "aparajmukund8@gmail.com",
   },
   {
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/in/mukund-aparaj-2a0415376",
     icon: <span className="font-bold text-[10px]">in</span>,
     label: "linkedin.com/in/mukundaparaj",
     target: "_blank",
@@ -21,11 +21,11 @@ const contacts = [
   {
     href: "https://github.com/mukund1234-jpg",
     icon: <GithubIcon />,
-    label: "github.com/mAp15_dev",
+    label: "github.com/mukund1234-jpg",
     target: "_blank",
   },
   {
-    href: "https://twitter.com",
+    href: "https://x.com/mAP15_dev",
     icon: <span className="text-[11px]">𝕏</span>,
     label: "@mAP15_dev",
     target: "_blank",
@@ -100,11 +100,11 @@ export default function Contact() {
           <div className="rr flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <label className="font-mono text-[.66rem] text-muted tracking-[.08em] uppercase">NAME</label>
-              <input type="text" placeholder="Jane Doe" className={inputClass} />
+              <input type="text" placeholder="Mukund Aparaj" className={inputClass} />
             </div>
             <div className="flex flex-col gap-2">
               <label className="font-mono text-[.66rem] text-muted tracking-[.08em] uppercase">EMAIL</label>
-              <input type="email" placeholder="jane@company.com" className={inputClass} />
+              <input type="email" placeholder="mukund@gmail.com" className={inputClass} />
             </div>
             <div className="flex flex-col gap-2">
               <label className="font-mono text-[.66rem] text-muted tracking-[.08em] uppercase">MESSAGE</label>

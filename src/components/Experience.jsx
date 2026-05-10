@@ -2,40 +2,25 @@ import { useEffect, useRef } from "react";
 
 const experiences = [
   {
-    role: " Full Stack Developer",
+    role: "Full Stack Developer",
     period: "2026 — Present",
     company: "Distinct Digital Solutions",
     type: "Full-time · Remote",
     delay: "d1",
     bullets: [
-      "Led redesign of the merchant dashboard, reducing support tickets by 34% and increasing NPS by 18 points.",
-      "Architected event-driven microservices handling 50M+ daily transactions across 40 currencies.",
-      "Mentored 4 junior engineers, ran 50+ technical interviews, established frontend coding standards.",
+      "Collaborated with the development team to build responsive full stack web applications using React.js, Tailwind CSS, and modern frontend technologies.",
+      
+      "Developed cross-platform mobile applications using Flutter with clean UI, responsive layouts, and API integration.",
+      
+      "Built scalable backend APIs using Python and FastAPI, including authentication, CRUD operations, file uploads, and database integration.",
+      
+      "Integrated third-party backend APIs, payment gateways, and external services to improve application functionality and automation.",
+      
+      "Developed AI automation chatbots using LangGraph and LangChain for workflow automation, intelligent conversations, and customer support systems.",
+      
+      "Used Git and GitHub for version control, team collaboration, branch management, and maintaining clean development workflows.",
     ],
   },
-  // {
-  //   role: "Full Stack Developer",
-  //   period: "2020 — 2022",
-  //   company: "Vercel",
-  //   type: "Full-time · San Francisco",
-  //   delay: "d2",
-  //   bullets: [
-  //     "Built and maintained Next.js open-source tooling with 8k+ weekly downloads on npm.",
-  //     "Optimized edge function cold start times by 62% through intelligent bundler configuration.",
-  //     "Collaborated with design systems team to ship 30+ reusable UI components.",
-  //   ],
-  // },
-  // {
-  //   role: "Frontend Developer",
-  //   period: "2019 — 2020",
-  //   company: "Shopify",
-  //   type: "Contract · Toronto",
-  //   delay: "d3",
-  //   bullets: [
-  //     "Developed merchant-facing storefront customization tools used by 500k+ store owners.",
-  //     "Migrated legacy jQuery codebase to React, cutting bundle size by 48%.",
-  //   ],
-  // },
 ];
 
 // const stats = [

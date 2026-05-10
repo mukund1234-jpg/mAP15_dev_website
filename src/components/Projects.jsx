@@ -12,9 +12,9 @@ const ExternalIcon = () => (
 );
 
 const featured = {
-  title: "DevFlow — Real-time Collaboration Platform",
-  desc: "A VS Code-like collaborative IDE with real-time multiplayer editing, video chat, and AI code completion. Handles 10k concurrent sessions via WebSocket clustering.",
-  tags: ["Next.js", "Node.js", "WebSockets", "OpenAI API", "Redis"],
+  title: "PriceBid - Auction Platform with Real-Time Bidding",
+  desc: "A full-stack auction platform built with Django, Html , css and javascript, featuring real-time bidding using WebSockets, if like selling and auction type platform, and Redis for caching.",
+  tags: ["Django", "JavaScript", "WebSockets", "Redis"],
   github: "#",
   live: "#",
 };
@@ -22,35 +22,19 @@ const featured = {
 const projects = [
   {
     num: "01",
-    title: "PulseMetrics — Analytics Dashboard",
-    desc: "Full-stack analytics with real-time event tracking, custom dashboards, and automated anomaly detection using ML.",
-    tags: ["React", "FastAPI", "TimescaleDB", "Recharts"],
-    github: "#",
-    delay: "d1",
-  },
-  {
-    num: "02",
-    title: "Cipher — E2E Encrypted Messenger",
-    desc: "Privacy-first messaging app with end-to-end encryption, disappearing messages, and zero-knowledge architecture. 2k+ GitHub stars.",
-    tags: ["React Native", "Node.js", "libsodium", "WebRTC"],
-    github: "#",
+    title: "Uddhar - Mobile App for Borrowing",
+    desc: "A Flutter-based peer-to-peer lending platform with borrowing features,for the customers to borrow money from the shopkeepers can lend money to the customers. It also has a feature of tracking the borrowed amount and the due date.",
+    tags: ["Flutter", "SQLite"],
+    github: "https://github.com/mukund1234-jpg/udhari_kirana_app",
     delay: "d2",
   },
   {
-    num: "03",
-    title: "Synapse — AI Writing Assistant",
-    desc: "Context-aware writing tool powered by GPT-4. Handles tone adaptation, SEO optimization, and multilingual content for 50+ languages.",
-    tags: ["Next.js", "OpenAI", "LangChain", "Supabase"],
+    num: "02",
+    title: "AMC - Full-Backend API",
+    desc: "A comprehensive backend API for an AMC (Annual Management Company) system, built with Python Framework FastAPI . It includes user authentication, order service management, transaction processing.",
+    tags: ["FastAPI", "Python", "Sqlite"],
     github: "#",
     delay: "d3",
-  },
-  {
-    num: "04",
-    title: "GridDB — Distributed Key-Value Store",
-    desc: "From-scratch distributed database in Go implementing Raft consensus, horizontal sharding, and automatic rebalancing.",
-    tags: ["Go", "Raft", "gRPC", "Protocol Buffers"],
-    github: "#",
-    delay: "d4",
   },
 ];
 
@@ -88,7 +72,7 @@ export default function Projects() {
         <div className="mt-14 flex flex-col gap-[3px]">
           {/* Featured */}
           <div
-            className="pi rv d1 bg-gradient-to-r from-sur to-cyan/4 border border-cyan/20 rounded-lg px-8 py-7 grid gap-6 hover:bg-sur2 hover:translate-x-1.5 transition-all duration-300 cursor-pointer mb-4"
+            className="pi rv d1 bg-gradient-to-r from-sur to-cyan/4 border border-cyan/20 rounded-lg px-8 py-7 grid gap-6 hover:bg-sur2 hover:translate-x-1.5 transition-all duration-300 cursor-pointer mb-2"
             style={{ gridTemplateColumns: "auto 1fr auto" }}
             onMouseMove={onCardMove}
             onMouseLeave={onCardLeave}
@@ -118,7 +102,7 @@ export default function Projects() {
           {projects.map(({ num, title, desc, tags, github, delay }) => (
             <div
               key={num}
-              className={`pi rv ${delay} bg-sur border border-white/10 rounded-lg px-8 py-7 grid gap-6 hover:bg-sur2 hover:translate-x-1.5 transition-all duration-300 cursor-pointer`}
+              className={`pi rv ${delay} bg-sur border border-white/10 rounded-lg px-8 py-7 grid gap-6 hover:bg-sur2 hover:translate-x-1.5 transition-all duration-300 cursor-pointer mb-2`}
               style={{ gridTemplateColumns: "auto 1fr auto" }}
               onMouseMove={onCardMove}
               onMouseLeave={onCardLeave}
