@@ -61,7 +61,7 @@ export default function Navbar() {
             }}
             className="font-mono text-[0.95rem] text-cyan"
           >
-            <span className="text-muted">&lt;</span>mAP15_dev
+            <span className="text-muted">&lt;</span>map15.dev
             <span className="text-muted">/&gt;</span>
           </a>
 
